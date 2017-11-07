@@ -13,8 +13,7 @@ class RecordingViewController: UIViewController {
     
     
     
-    @IBOutlet weak var test: UILabel!
-    
+
     
     
     
@@ -24,7 +23,7 @@ class RecordingViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        test.text = "Hello World"
+  
     }
 
     override func didReceiveMemoryWarning() {
