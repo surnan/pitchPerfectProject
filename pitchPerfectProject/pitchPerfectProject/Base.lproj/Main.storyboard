@@ -31,11 +31,17 @@
                                 <rect key="frame" x="163.5" y="139" width="49" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Record"/>
+                                <connections>
+                                    <action selector="recordButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uvD-94-VcD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOf-Wg-1qz">
                                 <rect key="frame" x="171.5" y="195" width="32" height="30"/>
                                 <color key="backgroundColor" red="0.9835986294064224" green="1" blue="0.40074467612090636" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VRd-If-y0m"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1l-c7-IZq">
                                 <rect key="frame" x="101.5" y="470" width="172" height="90"/>
@@ -43,22 +49,37 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recording In Progress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1UF-B0-AHc">
+                                <rect key="frame" x="103" y="626" width="169" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.65771153400000004" green="1" blue="0.94957912519999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="d6m-t7-AF1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2ik-0W-1n5"/>
                             <constraint firstItem="W1l-c7-IZq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Ja-f7-7l5"/>
                             <constraint firstItem="gOf-Wg-1qz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8JP-D9-4DB"/>
+                            <constraint firstItem="1UF-B0-AHc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dif-jM-aBU"/>
                             <constraint firstItem="W1l-c7-IZq" firstAttribute="top" secondItem="d6m-t7-AF1" secondAttribute="bottom" constant="91.5" id="GpV-ov-65r"/>
                             <constraint firstItem="enI-1T-pCl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a2X-v4-LDq"/>
                             <constraint firstItem="d6m-t7-AF1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fa7-11-aD4"/>
                             <constraint firstItem="d6m-t7-AF1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kmd-Sh-4um"/>
                             <constraint firstItem="gOf-Wg-1qz" firstAttribute="top" secondItem="enI-1T-pCl" secondAttribute="bottom" constant="26" id="q6Z-9W-oa0"/>
                             <constraint firstItem="enI-1T-pCl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="xLN-rD-Sxt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1UF-B0-AHc" secondAttribute="bottom" constant="20" id="xvc-aF-xkQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="bVu-dO-j4L"/>
+                    <connections>
+                        <outlet property="chipmunkButton" destination="W1l-c7-IZq" id="L8I-7Y-sk2"/>
+                        <outlet property="labelShowingStatus" destination="1UF-B0-AHc" id="NdR-7G-49f"/>
+                        <outlet property="recordButton" destination="enI-1T-pCl" id="1jG-to-FjN"/>
+                        <outlet property="stopButton" destination="gOf-Wg-1qz" id="n8y-mk-Zax"/>
+                        <outlet property="vaderButton" destination="d6m-t7-AF1" id="xb1-vs-JUe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
