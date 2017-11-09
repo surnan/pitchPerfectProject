@@ -10,7 +10,8 @@ import UIKit
 
 class GeneratingSoundsViewController: UIViewController {
     
-    
+    var recordedAudioURL: URL!
+    var incomingAudioSelection: String!
     
     
     
@@ -24,10 +25,9 @@ class GeneratingSoundsViewController: UIViewController {
     
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+    override func viewDidAppear(_ animated: Bool) {
+        print("recordedAudioURL = \(recordedAudioURL)")
+        print("incomingAudioSelection = \(incomingAudioSelection)")
     }
-    
-    
 }

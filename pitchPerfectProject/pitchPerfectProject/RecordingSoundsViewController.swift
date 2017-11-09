@@ -15,8 +15,6 @@ class RecordingViewController: UIViewController, AVAudioRecorderDelegate {
     
     @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
-    @IBOutlet weak var vaderButton: UIButton!
-    @IBOutlet weak var chipmunkButton: UIButton!
     @IBOutlet weak var labelShowingStatus: UILabel!
     
     func setButtonsReadyForRecording(status: Bool){
@@ -89,6 +87,17 @@ class RecordingViewController: UIViewController, AVAudioRecorderDelegate {
     @IBAction func stopButtonPressed(_ sender: Any) {
         setButtonsReadyForRecording(status: true)
         stopAudioRecording()
+        performSegue(withIdentifier: "generatingSoundsVCSegue", sender: audioRecorder.url)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "generatingSoundsVCSegue" {
+            let newVC = segue.destination as! GeneratingSoundsViewController
+            let recordedAudioURL = sender as! URL
+            newVC.recordedAudioURL = recordedAudioURL
+            newVC.incomingAudioSelection = "Just carrying over some data"
+        }
+    }
+    
 }
 
