@@ -85,10 +85,16 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQ0-4A-gBN">
                                         <rect key="frame" x="0.0" y="0.0" width="112.5" height="30"/>
                                         <state key="normal" title="Chipmunk"/>
+                                        <connections>
+                                            <action selector="buttonFunSoundEffects:" destination="soZ-xj-oSZ" eventType="touchUpInside" id="CTP-1E-Sw5"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KfQ-Oq-KrD">
                                         <rect key="frame" x="162.5" y="0.0" width="112.5" height="30"/>
                                         <state key="normal" title="Vader"/>
+                                        <connections>
+                                            <action selector="buttonFunSoundEffects:" destination="soZ-xj-oSZ" eventType="touchUpInside" id="EjE-wp-OJM"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -98,10 +104,16 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Equ-PW-59O">
                                         <rect key="frame" x="0.0" y="0.0" width="112.5" height="30"/>
                                         <state key="normal" title="Echo"/>
+                                        <connections>
+                                            <action selector="buttonFunSoundEffects:" destination="soZ-xj-oSZ" eventType="touchUpInside" id="MpY-4e-MIB"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Q3-Le-Avt">
                                         <rect key="frame" x="162.5" y="0.0" width="112.5" height="30"/>
                                         <state key="normal" title="Reverb"/>
+                                        <connections>
+                                            <action selector="buttonFunSoundEffects:" destination="soZ-xj-oSZ" eventType="touchUpInside" id="3Ml-fS-Cts"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -117,14 +129,23 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYi-CQ-mep">
                                         <rect key="frame" x="0.0" y="0.0" width="58.5" height="30"/>
                                         <state key="normal" title="Faster"/>
+                                        <connections>
+                                            <action selector="buttonPlayBackSpeed:" destination="soZ-xj-oSZ" eventType="touchUpInside" id="jmD-Bt-fUE"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXS-ls-1od">
                                         <rect key="frame" x="108.5" y="0.0" width="58" height="30"/>
                                         <state key="normal" title="Normal"/>
+                                        <connections>
+                                            <action selector="buttonPlayBackSpeed:" destination="soZ-xj-oSZ" eventType="touchUpInside" id="tMm-Dn-Mcf"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYk-yQ-L5t">
                                         <rect key="frame" x="216.5" y="0.0" width="58.5" height="30"/>
                                         <state key="normal" title="Slower"/>
+                                        <connections>
+                                            <action selector="buttonPlayBackSpeed:" destination="soZ-xj-oSZ" eventType="touchUpInside" id="y1y-Wn-ldD"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

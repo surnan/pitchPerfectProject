@@ -19,6 +19,7 @@ class GeneratingSoundsViewController: UIViewController {
     
     
     
+    //MARK: - UI and Storyboard
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -30,4 +31,16 @@ class GeneratingSoundsViewController: UIViewController {
         print("recordedAudioURL = \(recordedAudioURL)")
         print("incomingAudioSelection = \(incomingAudioSelection)")
     }
+    
+    
+    //MARK:  Button Action
+    
+    @IBAction func buttonFunSoundEffects(_ sender: UIButton) {
+    }
+    
+    
+    
+    @IBAction func buttonPlayBackSpeed(_ sender: UIButton) {
+    }
+    
 }
